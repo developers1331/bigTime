@@ -1,0 +1,53 @@
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 35px;    
+    &__avatar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 7px;
+        margin-bottom: 25px;
+        border: 2px solid var(--mc-third);
+        border-radius: 50%;
+        &-img {
+            border-radius: 50%;
+        }
+    }
+    &__name {
+        
+        font-weight: 600;
+        font-size: 24px;
+        margin-bottom: 35px;
+    }
+    &__statistics {
+        width: 100%;
+        &-cards {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            &-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                &-border {
+                    padding: 13px 22px;
+                    margin-bottom: 25px;
+                    border: 2px solid var(--mc-third);
+                    border-radius: 16px;
+                    font-size: 18px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                }
+                &-name {
+                    font-size: 14px;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}

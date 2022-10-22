@@ -4,6 +4,7 @@ import {LeftMenuComponent} from './components/left-menu/left-menu.component';
 import {NavigationMenuComponent} from './components/navigation-menu/navigation-menu.component';
 import {ExitBtnComponent} from './components/exit-btn/exit-btn.component';
 import {NavigationMenuItemComponent} from './components/navigation-menu-item/navigation-menu-item.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -15,7 +16,8 @@ import {NavigationMenuItemComponent} from './components/navigation-menu-item/nav
     NavigationMenuItemComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [LeftMenuComponent]
 })

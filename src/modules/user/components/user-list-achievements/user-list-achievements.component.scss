@@ -1,0 +1,29 @@
+.achievements {
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    &__btn {
+        display: block;
+        position: relative;
+        margin-right: 30px;
+        &::after {
+            content: '';
+            display: block;
+            background: url(../../../../assets/images/icons/icon-arrow-right.svg) no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -28px;  
+            width: 17px;
+            height: 9px;
+            transition: all .2s ease;         
+        }
+        &:hover::after {            
+            transform: translate(5px, -50%);
+        }
+    }
+}

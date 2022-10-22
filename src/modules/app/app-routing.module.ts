@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AchievementsListComponent } from '../achievements/achievements-list/achievements-list.component';
+import { HomePageComponent } from '../main/components/home-page/home-page.component';
 
-const routes: Routes = [];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+     
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

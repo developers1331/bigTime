@@ -1,0 +1,8 @@
+.home {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    &__left {
+        padding: 80px 0;
+        padding-right: 35px;
+    }
+}
