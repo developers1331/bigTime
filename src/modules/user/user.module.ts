@@ -4,6 +4,7 @@ import {ProfileDashboardComponent} from './components/profile-dashboard/profile-
 import {UserListAchievementsComponent} from './components/user-list-achievements/user-list-achievements.component';
 import {UserListAchievementsItemComponent} from './components/user-list-achievements-item/user-list-achievements-item.component';
 import {UserInfoComponent} from './components/user-info/user-info.component';
+import { ProfileStatisticsItemComponent } from './components/profile-statistics-item/profile-statistics-item.component';
 
 
 
@@ -12,7 +13,8 @@ import {UserInfoComponent} from './components/user-info/user-info.component';
     ProfileDashboardComponent,
     UserListAchievementsComponent,
     UserListAchievementsItemComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    ProfileStatisticsItemComponent
   ],
   imports: [
     CommonModule

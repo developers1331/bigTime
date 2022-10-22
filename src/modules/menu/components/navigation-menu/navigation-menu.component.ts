@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationMenuComponent implements OnInit {
 
+  public isAuth: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public toggleAuth(): void {
+    this.isAuth = !this.isAuth;
   }
 
 }

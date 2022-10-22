@@ -1,6 +1,37 @@
 .profile {
-    background: #161a42;
+    padding: 35px 25px;
+    border-left: 2px solid var(--mc-third);
+    background: var(--mc-main);
+    min-height: 100vh;
+    color: var(--mc-textColor);
+    position: relative;
+    overflow-x: hidden;
+    &::before {
+        content: '';
+        display: block;
+        background: url(../../../../assets/images/icons/profile/icon-circles.svg) no-repeat;
+        background-size: contain;
+        width: 201px;
+        height: 373px;
+        position: absolute;
+        top: 21px;
+        right: -34px;
+    }
+    &::after {
+        content: '';
+        display: block;
+        background: url(../../../../assets/images/icons/profile/icon-circles-2.svg) no-repeat;
+        background-size: contain;
+        width: 178px;
+        height: 427px;
+        position: absolute;
+        top: -3px;
+        left: 0;
+    }
     &__title {
         font-size: 36px;
+        margin: 0 0 30px;
+        font-weight: 700;
+        text-align: center;
     }
 }

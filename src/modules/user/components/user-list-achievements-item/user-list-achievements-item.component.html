@@ -1,1 +1,13 @@
-<p>user-list-achievements-item works!</p>
+<div class="achievements__item" *ngFor="let user of usersStatistics; let i = index">
+    <div class="achievements__item-left">
+        <img src="{{ user.srcImg }}" alt="achievement" class="achievements__item-img">
+    </div>
+    <div class="achievements__right">
+        <h3 class="achievements__item-name">
+            {{ user.name }}
+        </h3>
+        <p class="achievements__item-desc">
+            {{ user.desc }}
+        </p>
+    </div>
+</div>

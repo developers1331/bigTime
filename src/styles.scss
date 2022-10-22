@@ -1,3 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import 'styles/index.scss';
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background: var(--mc-bg);
+    color: white;
+}
+
+a {
+    color: var(--mc-linkColor);
+    text-decoration: none;
+    transition: all .2s ease;
+    &:hover {
+        color: var(--mc-linkColorHover);
+    }    
+}

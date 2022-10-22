@@ -1,1 +1,15 @@
-<p>user-info works!</p>
+<div class="info">
+    <div class="info__avatar">
+        <img src="assets/images/avatar.png" alt="" class="info__avatar-img" loading="lazy">
+    </div>
+    <div class="info__name">
+        Wegana
+    </div>
+    <div class="info__statistics">
+        <div class="info__statistics-cards">
+            <app-profile-statistics-item text="Achievements" [value]="usersStatistics.achievements"></app-profile-statistics-item>
+            <app-profile-statistics-item text="Followers" [value]="usersStatistics.followers"></app-profile-statistics-item>
+            <app-profile-statistics-item text="Likes" [value]="usersStatistics.likes"></app-profile-statistics-item>
+        </div>
+    </div>
+</div>

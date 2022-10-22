@@ -1,1 +1,23 @@
-<p>navigation-menu works!</p>
+<section class="menu">
+    <div class="menu__top">
+        <div class="menu__logo">
+            <a routerLink="">
+                <img src="assets/images/logo.svg" alt="logo" class="menu__logo-picture">
+            </a>
+        </div>
+        <nav class="menu__nav">
+            <ul class="menu__nav-list">
+                <app-navigation-menu-item link="profile" img="icon-menu-gear.svg"></app-navigation-menu-item>
+                <app-navigation-menu-item link="achievements" img="icon-menu-statistics.svg"></app-navigation-menu-item>
+            </ul>
+        </nav>
+    </div>
+    <div class="menu__bottom">
+        <div class="menu__bottom-exit" *ngIf="isAuth" (click)="toggleAuth()">
+
+        </div>
+        <div class="menu__bottom-login" *ngIf="!isAuth" (click)="toggleAuth()">
+
+        </div>
+    </div>
+</section>

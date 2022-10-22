@@ -1,0 +1,45 @@
+.menu {
+    height: 100%;
+    &__top {
+        height: 100%;
+    }
+    &__bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-exit,
+        &-login {
+            display: block;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+        &-exit {
+            background: url(../../../../assets/images/icons/menu/icon-menu-exit.svg) no-repeat;
+        }
+        &-login {
+            background: url(../../../../assets/images/icons/menu/icon-menu-login.svg) no-repeat;
+        }
+    }
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    &__nav {
+        height: 100%;
+        &-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100%;
+             ::ng-deep {
+                .menu__nav-list-item {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+}

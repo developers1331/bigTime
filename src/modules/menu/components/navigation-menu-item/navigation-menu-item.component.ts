@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { dataImage } from '../menu.data';
 
 @Component({
   selector: 'app-navigation-menu-item',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationMenuItemComponent implements OnInit {
 
-  constructor() { }
+  @Input() link: string = '';
+  @Input() img: string = '';
+
+  dataImage: Object = dataImage;
+
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
+
+  public navigate(): void {
+    this.router.navigate([`/${this.link}`])    
+  }
+
+  // public getUrlImage(link: string): string {
+  //   return link = this.dataImage
+  // }
 
 }

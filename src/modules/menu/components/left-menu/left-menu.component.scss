@@ -1,0 +1,10 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--mc-main);
+    height: 100%;
+    padding: 80px 5px;
+    width: 110px;
+    border-right: 2px solid var(--mc-third);
+}
