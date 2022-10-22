@@ -16,7 +16,7 @@ export class UserInfoComponent implements OnInit {
   }
 
   public getArrayStatistics(id: number) {
-    this.usersStatistics =  Object.entries(usersStatistics[id].statistics);
+    this.usersStatistics =  usersStatistics[id].statistics;
     console.log(this.usersStatistics);
   }
 

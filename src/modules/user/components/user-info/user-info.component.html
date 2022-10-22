@@ -7,14 +7,9 @@
     </div>
     <div class="info__statistics">
         <div class="info__statistics-cards">
-            <div class="info__statistics-cards-item" *ngFor="let user of usersStatistics; let i = index">
-                <div class="info__statistics-cards-item-border">
-                    {{ user[1] }}
-                </div>
-                <div class="info__statistics-cards-item-name">
-                    {{ user[0] }}
-                </div>
-            </div>
+            <app-profile-statistics-item text="Achievements" [value]="usersStatistics.achievements"></app-profile-statistics-item>
+            <app-profile-statistics-item text="Followers" [value]="usersStatistics.followers"></app-profile-statistics-item>
+            <app-profile-statistics-item text="Likes" [value]="usersStatistics.likes"></app-profile-statistics-item>
         </div>
     </div>
 </div>
