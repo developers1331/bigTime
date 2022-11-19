@@ -1,0 +1,56 @@
+.home {
+    &__achievements-cards {
+        &-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            &-like {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                background: #161A42;
+                height: 50px;
+                width: 70%;
+                padding: 0 10px;
+                border-radius: 14px;
+                font-weight: 600;
+                cursor: pointer;
+                position: relative;
+                &::after {
+                    content: '';
+                    background: #161A42;
+                    width: 25%;
+                    height: 70px;
+                    position: absolute;
+                    top: 0;
+                    right: -13px;
+                    border-top-left-radius: 30px;
+                    border-top-right-radius: 30px;
+                    transform: rotate(-25deg);
+                    z-index: -1;
+                }
+                &-span {
+                    position: relative;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        right: -30px;
+                        width: 22px;
+                        height: 22px;
+                        background: url(../../../assets/images/icons/icon-like.svg) no-repeat;
+                    }
+                }
+            }
+            &-img {
+                border-radius: 14px;
+                margin-bottom: 15px;
+                width: 100%;
+            }
+            &-name {
+                font-weight: 600;
+            }
+        }
+    }
+}

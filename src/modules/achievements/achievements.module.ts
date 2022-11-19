@@ -5,6 +5,7 @@ import { AchievementsListItemComponent } from './achievements-list-item/achievem
 import { HomePageComponent } from '../main/components/home-page/home-page.component';
 
 
+
 @NgModule({
   declarations: [
     AchievementsListComponent,

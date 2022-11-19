@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import SwiperCore, { Mousewheel, Scrollbar } from "swiper";
 
 @Component({
   selector: 'app-slider-top-users',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SliderTopUsersComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    SwiperCore.use([Scrollbar, Mousewheel]);
+   }
 
   ngOnInit(): void {
+  }
+  
+  
+
+  onSwiper([swiper]: any) {
+    console.log(swiper);
+  }
+  onSlideChange() {
+    console.log('slide change');
   }
 
 }

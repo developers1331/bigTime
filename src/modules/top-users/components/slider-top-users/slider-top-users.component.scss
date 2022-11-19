@@ -1,0 +1,66 @@
+.swiper {
+    width: 65vw;
+    height: 136px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider__slide {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    &-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-img {
+            width: 60px;
+            height: 60px;
+            margin-right: 20px;
+            img {
+                border-radius: 14px;
+            }
+        }
+        &-desc {
+            &-name {
+                font-weight: 700;
+            }
+            &-value {
+                color: var(--mc-linkColor);
+            }
+        }
+    }
+}
+
+::ng-deep {
+    .swiper-scrollbar-drag {
+        background: var(--mc-linkColor);
+    }
+    .swiper-horizontal > .swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+        bottom: 40px;
+    }  
+}

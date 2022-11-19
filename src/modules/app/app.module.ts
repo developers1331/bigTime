@@ -7,6 +7,7 @@ import {MenuModule} from 'src/modules/menu/menu.module';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 
+
 @NgModule({
   declarations: [
     AppComponent
@@ -17,7 +18,7 @@ import {AppComponent} from './app.component';
     CoreModule,
     MenuModule,
     MainModule,
-  ],
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
