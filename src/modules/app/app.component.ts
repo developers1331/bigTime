@@ -7,4 +7,11 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
 
+  onSwiper([swiper]: any) {
+    console.log(swiper);
+  }
+  onSlideChange() {
+    console.log('slide change');
+  }
+
 }
